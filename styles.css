@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: black;
+}
+
+#home {
+    height: 100vh;
+    background-image: url(img/fondoimg.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+h1,
+h2,
+h3 {
+    color: white;
+    font-family: "Oswald", sans-serif;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.219);
+    padding: 0.3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+}
+
+a,
+button {
+    transition: 0.3s;
+}
+
+#LogoExpo {
+    width: 100px;
+}
+
+#menu {
+    width: 30px;
+    margin-right: 1.5em;
+}
+
+nav a {
+    color: white;
+    padding: 0.5em 1em;
+    margin-right: 1em;
+}
+
+nav a:hover {
+    color: #7c7c7c;
+}
+
+nav {
+    display: none;
+}
+
+#subtitulo {
+    display: none;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 0.1em;
+}
+
+#titulos {
+    text-align: center;
+    margin: 0.7em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.267);
+    position: absolute;
+    bottom: 2em;
+    border-radius: 15px;
+}
+
+.contenedor {
+    margin: 0 auto;
+    width: 278px;
+    display: flex;
+}
+
+main {
+    position: relative;
+}
+
+form {
+    color: white;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: #0000006e;
+    border-radius: 15px;
+    padding: 0.6em;
+    display: inline-block;
+}
+
+input[type="email"],
+select {
+    width: 100%;
+}
+
+h3 {
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+#inscripción {
+    border-radius: 50px;
+    padding: 0.3em;
+    width: 100%;
+    margin-top: 0.5em;
+}
+
+#inscripción:hover {
+    background-color: #7c7c7c;
+}
+
+input,
+select {
+    margin-top: 0.5em;
+    padding: 0.3em 0.5em;
+    max-width: 320px;
+}
+
+#galeria div {
+    width: 30vh;
+    height: 30vh;
+    margin: 0 auto;
+    background-size: cover;
+}
+
+#galeria div:nth-of-type(1) {
+    background-image: url(img/galeria1.jpg);
+}
+
+#galeria div:nth-of-type(2) {
+    background-image: url(img/galeria2.jpg);
+}
+
+#galeria div:nth-of-type(3) {
+    background-image: url(img/galeria3.png);
+    align-content: center;
+    text-align: center;
+    color: white;
+}
+
+#galeria div:nth-of-type(3) a {
+    color: white;
+    background-color: #363636;
+    padding: 0.3em 0.5em;
+    border-radius: 50px;
+    margin-top: 0.5em;
+    display: inline-block;
+}
+
+#galeria div:nth-of-type(3) a:hover {
+    background-color: #7c7c7c;
+}
+
+#galeria div:nth-of-type(4) {
+    background-image: url(img/galeria4.png);
+    display: none;
+}
+
+#galeria div:nth-of-type(5) {
+    background-image: url(img/galeria5.jpg);
+}
+
+#galeria div:nth-of-type(6) {
+    background-image: url(img/galeria6.jpg);
+}
+
+#h2artistas {
+    text-align: center;
+    margin-top: 1em;
+}
+
+#Artistas {
+    padding: 1em;
+}
+
+#Artistas article {
+    margin: 0;
+    margin-top: 1em;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: #363636;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    text-align: center;
+    align-items: center;
+}
+
+#Artistas article img {
+    height: 20vh;
+}
+
+#Artistas article:nth-of-type(n+4) img {
+    display: none;
+}
+
+#Artistas p {
+    color: white;
+    font-size: 0.8em;
+}
+
+#Artistas h3 {
+    margin: 0;
+}
+
+#Artistas a {
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    padding: 0.3em 0.5em;
+    margin: 0;
+    display: inline-block;
+    height: auto;
+}
+
+#Artistas a:hover {
+    background-color: #7c7c7c;
+}
+
+#Artistas img {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+    background-color: #363636;
+}
+
+h4 {
+    display: none;
+}
+
+footer {
+    background-color: #7c7c7c;
+    height: 100px;
+    padding: 1em;
+}
+
+footer h3 {
+    text-align: center;
+    color: black;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+}
+
+footer div img {
+    width: 25px;
+}
+
+@media all and (min-width:768px) {
+
+    #menu {
+        display: none;
+    }
+
+    header nav {
+        display: block;
+    }
+
+    input,
+    select {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        padding: 0.3em 0.5em;
+        max-width: 250px;
+    }
+
+    #inscripción {
+        padding: 0.3em 0.5em;
+        margin-top: 0.5em;
+        max-width: 60px;
+    }
+
+    .contenedor {
+        width: 90%;
+    }
+
+    #titulos {
+        text-align: left;
+        font-size: 1em;
+        padding: 0.5em;
+        position: absolute;
+        bottom: 3em;
+        left: 2em;
+        max-width: 550px;
+    }
+
+    #galeria {
+        display: grid;
+        grid-template-columns: repeat(2, 30vh);
+        grid-template-rows: repeat(4, 30vh);
+        justify-content: center;
+    }
+
+    #galeria div:nth-of-type(3) {
+        grid-row: 1/3;
+        grid-column: 2/3;
+        height: auto;
+    }
+
+    #galeria div:nth-of-type(4) {
+        display: block;
+        grid-column: span 2;
+        width: auto;
+        text-align: left;
+        align-content: end;
+        padding: 2em;
+    }
+
+    #galeria div:nth-of-type(4) p {
+        color: white;
+    }
+
+    #Artistas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 2fr 1fr 1fr;
+        gap: 1em;
+    }
+
+    #Artistas article {
+        margin: 0;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    #Artistas article:nth-of-type(3) {
+        grid-row: span 2;
+    }
+
+    footer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    footer h3 {
+        text-align: end;
+        margin-right: 1em;
+    }
+}
+
+@media all and (min-width:1200px) {
+    .contenedor {
+        width: 320px;
+        position: absolute;
+        right: 6em;
+        top: -10em;
+    }
+
+    #inscripción {
+        max-width: 100%;
+        padding: 0.3em;
+    }
+
+    input,
+    select {
+        margin-top: 0.5em;
+        padding: 0.3em 0.5em;
+        max-width: 320px;
+    }
+
+    #subtitulo {
+        display: block;
+        font-size: 0.8em;
+    }
+
+    #titulos {
+        text-align: left;
+        font-size: 1.3em;
+        padding: 0.5em;
+        position: absolute;
+        bottom: 8em;
+        left: 4em;
+        max-width: 550px;
+    }
+
+    #galeria div {
+        width: 24vw;
+        height: 24vw;
+    }
+
+    #galeria {
+        margin-top: 8em;
+        grid-template-columns: repeat(4, 24vw);
+        grid-template-rows: repeat(2, 24vw);
+    }
+
+    #galeria div:nth-of-type(4) {
+        grid-row: 1/2;
+    }
+
+    #Artistas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    #Artistas article {
+        position: relative;
+        width: 40vh;
+    }
+
+    h4 {
+        display: block;
+        position: absolute;
+        top: 1.5em;
+        right: 0em;
+        color: white;
+        background-color: #7c7c7c;
+        padding: 0.3em;
+        font-size: 1.2em;
+    }
+
+    h4:hover {
+        background-color: #363636;
+    }
+
+    #Artistas article:nth-of-type(n+4) img {
+        display: block;
+    }
+
+}
